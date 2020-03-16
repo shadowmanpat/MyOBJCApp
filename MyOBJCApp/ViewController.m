@@ -16,6 +16,8 @@
 @implementation ViewController
 - (IBAction)loadSecondVC:(id)sender {
     
+    MockClass *client = [MockClass new];
+    
     _secondVC = [[SecondVC alloc] init];
     _secondVC.view.backgroundColor = [UIColor purpleColor];
     [self presentViewController:_secondVC animated:YES completion:nil];
