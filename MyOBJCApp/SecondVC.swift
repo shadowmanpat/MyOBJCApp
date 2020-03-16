@@ -10,9 +10,11 @@ import UIKit
 
 class SecondVC: UIViewController {
 
+    var firstVC : ViewController = ViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            firstVC.view.backgroundColor = UIColor.black
         // Do any additional setup after loading the view.
     }
 

@@ -13,6 +13,8 @@
 		49EAB752241F88BA003BF585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EAB751241F88BA003BF585 /* Assets.xcassets */; };
 		49EAB755241F88BA003BF585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EAB753241F88BA003BF585 /* LaunchScreen.storyboard */; };
 		49EAB758241F88BA003BF585 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EAB757241F88BA003BF585 /* main.m */; };
+		49EAB761241F897E003BF585 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EAB75F241F897E003BF585 /* SecondVC.swift */; };
+		49EAB762241F897E003BF585 /* SecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EAB760241F897E003BF585 /* SecondVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		49EAB754241F88BA003BF585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49EAB756241F88BA003BF585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49EAB757241F88BA003BF585 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49EAB75E241F897E003BF585 /* MyOBJCApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyOBJCApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		49EAB75F241F897E003BF585 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		49EAB760241F897E003BF585 /* SecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				49EAB753241F88BA003BF585 /* LaunchScreen.storyboard */,
 				49EAB756241F88BA003BF585 /* Info.plist */,
 				49EAB757241F88BA003BF585 /* main.m */,
+				49EAB75F241F897E003BF585 /* SecondVC.swift */,
+				49EAB760241F897E003BF585 /* SecondVC.xib */,
+				49EAB75E241F897E003BF585 /* MyOBJCApp-Bridging-Header.h */,
 			);
 			path = MyOBJCApp;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 				TargetAttributes = {
 					49EAB744241F88B7003BF585 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -130,6 +139,7 @@
 			files = (
 				49EAB755241F88BA003BF585 /* LaunchScreen.storyboard in Resources */,
 				49EAB752241F88BA003BF585 /* Assets.xcassets in Resources */,
+				49EAB762241F897E003BF585 /* SecondVC.xib in Resources */,
 				49EAB750241F88B7003BF585 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +153,7 @@
 			files = (
 				49EAB74D241F88B7003BF585 /* ViewController.m in Sources */,
 				49EAB758241F88BA003BF585 /* main.m in Sources */,
+				49EAB761241F897E003BF585 /* SecondVC.swift in Sources */,
 				49EAB74A241F88B7003BF585 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7LG66FXVT;
 				INFOPLIST_FILE = MyOBJCApp/Info.plist;
@@ -294,6 +306,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickagas.MyOBJCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyOBJCApp/MyOBJCApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7LG66FXVT;
 				INFOPLIST_FILE = MyOBJCApp/Info.plist;
@@ -311,6 +327,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickagas.MyOBJCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyOBJCApp/MyOBJCApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
